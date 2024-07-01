@@ -237,7 +237,7 @@
 - Below is how to get the Fibonacci Retracement indicator.
 
 ```
-
+    fib = ta.get_Fibonacci_Retracement(df["Close"])
 
     # Output
 
@@ -256,13 +256,13 @@
     2024-06-28  176.94  152.37  132.50  112.64   84.36      48.33     216.67
 
     # Add it to the dataframe.
-    df["fib_level1"] = oscillator["level1"]
-    df["fib_level2"] = oscillator["level2"]
-    df["fib_level3"] = oscillator["level3"]
-    df["fib_level4"] = oscillator["level4"]
-    df["fib_level5"] = oscillator["level5"]
-    df["fib_min_price"] = oscillator["min_price"]
-    df["fib_max_price"] = oscillator["max_price"]
+    df["fib_level1"] = fib["level1"]
+    df["fib_level2"] = fib["level2"]
+    df["fib_level3"] = fib["level3"]
+    df["fib_level4"] = fib["level4"]
+    df["fib_level5"] = fib["level5"]
+    df["fib_min_price"] = fib["min_price"]
+    df["fib_max_price"] = fib["max_price"]
 
 
 ```
