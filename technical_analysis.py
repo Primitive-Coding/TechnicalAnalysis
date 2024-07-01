@@ -758,10 +758,10 @@ if __name__ == "__main__":
         df,
         ticker=ticker,
         price_annotate=True,
-        rsi=(False, False),
-        macd=(False, False),
+        rsi=(True, True),
+        macd=(True, True),
         oscillator=(False, False),
-        bb_bands=(False, False),
+        bb_bands=(True, False),
         fibonacci=(False, False),
         dividends=(False, False),
     )

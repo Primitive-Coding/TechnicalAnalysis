@@ -321,6 +321,8 @@
     2024-06-28 467.10     3.15  0.67         2.70
 ```
 
+---
+
 ### Plotting
 
 ```
@@ -328,3 +330,28 @@
 ```
 
 ![AAPL_Basic_Chart](images/aapl_basic.png)
+
+###### Dynamically Add Indicators
+
+- Each indicator is mapped to a tuple like this `(bool, bool)`.
+
+  - The first bool determines if the indicator is added.
+  - The second bool determines if the indicator is annotated. (See further for annotated examples)
+
+- Dynamically add indicators to your charts with the function parameters.
+
+```
+    ta.plot_graph(df, "AAPL", rsi=(True, False), macd=(True, False))
+```
+
+![AAPL_RSI_MACD_Chart](images/aapl_rsi_macd.PNG)
+
+###### Dynamically Add Annotations
+
+- Setting the second bool to True, will add annotations to the indicator.
+
+```
+    ta.plot_graph(df, "AAPL", rsi=(True, True), macd=(True, True), bb_bands=(True, False))
+```
+
+![AAPL_RSI_MACD_Annotated_Chart](images/aapl_rsi_macd_annotation.PNG)
