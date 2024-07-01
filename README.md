@@ -327,4 +327,4 @@
     ta.plot_graph(df, "AAPL")
 ```
 
-![AAPL_Basic_Chart](D:\Coding\VisualStudioCode\Projects\PythonV2\Analysis\TechnicalAnalysis\images\aapl_basic.png)
+![AAPL_Basic_Chart](\images\aapl_basic.png)
